@@ -146,3 +146,51 @@ images.forEach(function (image) {
     });
 
 });
+/* =========================================
+   SHOWREEL POPUP
+========================================= */
+
+function openShowreels() {
+
+    document
+        .getElementById("showreelModal")
+        .classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeShowreels() {
+
+    document
+        .getElementById("showreelModal")
+        .classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+document
+    .getElementById("showreelModal")
+    .addEventListener("click", function(event) {
+
+        if (event.target === this) {
+
+            closeShowreels();
+
+        }
+
+    });
+
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeShowreels();
+
+    }
+
+});
