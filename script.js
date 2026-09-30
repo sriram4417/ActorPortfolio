@@ -1,4 +1,3 @@
-
 /* =========================================
    PRELOADER
 ========================================= */
@@ -195,3 +194,33 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+function playReel(videoPath, title) {
+
+    const modal = document.getElementById("videoPlayerModal");
+    const video = document.getElementById("reelVideo");
+    const source = document.getElementById("reelVideoSource");
+    const videoTitle = document.getElementById("videoTitle");
+
+    source.src = videoPath;
+    videoTitle.textContent = title;
+
+    video.load();
+
+    modal.classList.add("active");
+
+    video.play().catch(() => {
+        console.log("Video ready. Press play.");
+    });
+}
+
+
+function closeReelPlayer() {
+
+    const modal = document.getElementById("videoPlayerModal");
+    const video = document.getElementById("reelVideo");
+
+    video.pause();
+    video.currentTime = 0;
+
+    modal.classList.remove("active");
+}
