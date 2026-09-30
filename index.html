@@ -853,6 +853,26 @@
 
 
 <script src="script.js"></script>
+<div class="video-player-modal" id="videoPlayerModal">
+
+    <div class="video-player-box">
+
+        <button class="close-video" onclick="closeReelPlayer()">
+            ×
+        </button>
+
+        <div class="video-title" id="videoTitle">
+            SHOWREEL
+        </div>
+
+        <video id="reelVideo" controls playsinline>
+            <source id="reelVideoSource" src="" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+
+    </div>
+
+</div>
 <!-- ================= SHOWREEL POPUP ================= -->
 
 <div class="showreel-modal" id="showreelModal">
@@ -872,65 +892,68 @@
             <span>SHOWREEL</span>
         </h2>
 
-        <div class="showreel-options">
+      <div class="showreel-options">
 
-            <a href="images/reels/showreel.mp4" target="_blank" class="reel-option">
+    <a href="#" 
+       onclick="playReel('images/reels/showreel.mp4', 'Emotion'); return false;" 
+       class="reel-option">
 
-                <span class="reel-number">01</span>
+        <span class="reel-number">01</span>
 
-                <div>
-                    <h3>Emotion</h3>
-                </div>
-
-                <span class="reel-arrow">↗</span>
-
-            </a>
-
-
-            <a href="images/DancePer.mp4" target="_blank" class="reel-option">
-
-                <span class="reel-number">02</span>
-
-                <div>
-                    <h3>Dance</h3>
-                </div>
-
-                <span class="reel-arrow">↗</span>
-
-            </a>
-
-
-            <a href="images/mimicry.mp4" target="_blank" class="reel-option">
-
-                <span class="reel-number">03</span>
-
-                <div>
-                    <h3>Mimicry</h3>
-                    
-                </div>
-
-                <span class="reel-arrow">↗</span>
-
-            </a>
-
-
-            <a href="images/thedaAct.mp4" target="_blank" class="reel-option">
-
-                <span class="reel-number">04</span>
-
-                <div>
-                    <h3>Comedy</h3>
-                </div>
-
-                <span class="reel-arrow">↗</span>
-
-            </a>
-             
-            
-
+        <div>
+            <h3>EMOTION</h3>
         </div>
 
-    </div>
+       <span class="reel-arrow">▶</span>
+
+    </a>
+
+
+    <a href="#" 
+       onclick="playReel('images/DancePer.mp4', 'Dance'); return false;" 
+       class="reel-option">
+
+        <span class="reel-number">02</span>
+
+        <div>
+            <h3>DANCE</h3>
+        </div>
+
+       <span class="reel-arrow">  ▶</span>
+
+    </a>
+
+
+    <a href="#" 
+       onclick="playReel('images/mimicry.mp4', 'Mimicry'); return false;" 
+       class="reel-option">
+
+        <span class="reel-number">03</span>
+
+        <div>
+            <h3>MIMICRY</h3>
+        </div>
+
+        <span class="reel-arrow">▶</span>
+
+    </a>
+
+
+    <a href="#" 
+       onclick="playReel('images/thedaAct.mp4', 'Comedy'); return false;" 
+       class="reel-option">
+
+        <span class="reel-number">04</span>
+
+        <div>
+            <h3>COMEDY</h3>
+        </div>
+
+        <span class="reel-arrow">▶</span>
+
+    </a>
+
+</div>
 
 </div>
 
