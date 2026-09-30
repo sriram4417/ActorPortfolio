@@ -1505,17 +1505,6 @@ footer {
     flex-direction: column;
 }
 
-.reel-option {
-    display: grid;
-    grid-template-columns: 55px 1fr 30px;
-    align-items: center;
-    gap: 20px;
-    padding: 22px 0;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    text-decoration: none;
-    color: white;
-    transition: 0.3s ease;
-}
 
 .reel-option:hover {
     padding-left: 12px;
@@ -1816,5 +1805,425 @@ footer {
         width: 590px;
         opacity: 0.15;
         transform: scaleX(1);
+    }
+}
+.video-player-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 99999;
+}
+
+.video-player-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-player-box {
+    width: min(900px, 92%);
+    position: relative;
+}
+
+.video-player-box video {
+    width: 100%;
+    max-height: 80vh;
+    display: block;
+    background: #000;
+}
+
+.close-video {
+    position: absolute;
+    right: -10px;
+    top: -45px;
+
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid #b99a5b;
+    background: #000;
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.video-title {
+    color: #b99a5b;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+.reel-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    background: transparent;
+    border: none;
+    color: inherit;
+
+    font: inherit;
+    cursor: pointer;
+
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+.reel-option:hover {
+    color: inherit;
+}
+
+.reel-option h3 {
+    margin: 0;
+    font: inherit;
+}
+
+.reel-option .reel-number,
+.reel-option .reel-arrow {
+    flex-shrink: 0;
+}
+/* =====================================================
+   SHOWREEL POPUP — FINAL PREMIUM STYLE
+   ===================================================== */
+
+.showreel-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.82);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.35s ease, visibility 0.35s ease;
+
+    z-index: 9999;
+}
+
+.showreel-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* MAIN POPUP BOX */
+
+.showreel-box {
+    position: relative;
+
+    width: min(660px, 88vw);
+    min-height: 650px;
+
+    padding: 70px 48px 55px;
+
+    background: #101010;
+
+    border: 1px solid #8f7542;
+
+    box-sizing: border-box;
+}
+
+
+/* TOP NAME */
+
+.modal-label {
+    display: block;
+
+    margin-bottom: 38px;
+
+    color: #b99a5b;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.showreel-box h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(52px, 7vw, 76px);
+
+    line-height: 0.95;
+
+    font-weight: 500;
+
+    color: #f4f1eb;
+
+    letter-spacing: -2px;
+}
+
+.showreel-box h2 span {
+    display: block;
+
+    color: #b99a5b;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-showreel {
+    position: absolute;
+
+    top: 42px;
+    right: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 42px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: 200;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.close-showreel:hover {
+    color: #b99a5b;
+
+    transform: rotate(90deg);
+}
+
+
+/* SHOWREEL LIST */
+
+.showreel-options {
+    margin-top: 65px;
+
+    width: 100%;
+}
+
+
+/* EACH SHOWREEL */
+
+.reel-option {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+    background: transparent;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+}
+
+
+/* LAST LINE */
+
+.reel-option:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+
+/* NUMBER */
+
+.reel-number {
+    width: 98px;
+
+    flex-shrink: 0;
+
+    color: #b99a5b;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+
+/* TITLE */
+
+.reel-option h3 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    color: #f5f2ed;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* PLAY / ARROW ICON */
+
+.reel-arrow {
+    margin-left: auto;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: linear-gradient(
+        145deg,
+        #d9e7f2,
+        #7e9db5
+    );
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* HOVER */
+
+.reel-option:hover {
+    padding-left: 8px;
+}
+
+.reel-option:hover h3 {
+    color: #b99a5b;
+
+    transform: translateX(6px);
+}
+
+.reel-option:hover .reel-arrow {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =====================================================
+   MOBILE — MATCH YOUR SCREENSHOT
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .showreel-box {
+        width: 88vw;
+
+        min-height: 0;
+
+        padding: 62px 28px 45px;
+    }
+
+    .modal-label {
+        margin-bottom: 34px;
+
+        font-size: 10px;
+
+        letter-spacing: 4px;
+    }
+
+    .showreel-box h2 {
+        font-size: 48px;
+
+        line-height: 0.96;
+    }
+
+    .close-showreel {
+        top: 34px;
+        right: 27px;
+
+        font-size: 38px;
+    }
+
+    .showreel-options {
+        margin-top: 55px;
+    }
+
+    .reel-option {
+        min-height: 90px;
+    }
+
+    .reel-number {
+        width: 78px;
+
+        font-size: 16px;
+    }
+
+    .reel-option h3 {
+        font-size: 28px;
+    }
+
+    .reel-arrow {
+        width: 40px;
+        height: 40px;
+
+        font-size: 21px;
     }
 }
