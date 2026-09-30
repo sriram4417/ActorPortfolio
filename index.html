@@ -20,6 +20,48 @@
 </head>
 
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    ...
+</head>
+
+<body>
+
+    <!-- ================= CINEMATIC INTRO ================= -->
+
+    <div id="intro">
+
+        <div class="intro-line"></div>
+
+        <div class="intro-content">
+
+            <span class="intro-small">
+                ACTOR • PERFORMER • CREATOR
+            </span>
+
+            <h1>
+                SRIRAM
+                <span>KALAVALA</span>
+            </h1>
+            <div class="name-gold-line"></div>
+
+            <div class="intro-bottom">
+                <span>PORTFOLIO </span>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= YOUR EXISTING WEBSITE ================= -->
+
+    <nav>
+        ...
+    </nav>
+
 
 <!-- ================= PRELOADER ================= -->
 
@@ -87,10 +129,9 @@
 
         <div class="hero-buttons">
 
-            <a href="images/reels/showreel.mp4" class="btn primary">
-                WATCH SHOWREEL
-            </a>
-
+            <button class="btn showreel-btn" onclick="openShowreels()">
+    WATCH SHOWREEL
+</button>
             <a href="#contact" class="btn secondary">
                 CONTACT ME
             </a>
@@ -446,7 +487,7 @@
         </div>    
     <div class="photo-portrait">
         <div class="photo-card medium">
-            <img src="images/kopam.jpg">
+            <img src="images/serious.jpg">
             <div class="photo-caption">
                 <span>07 KOPAM</span>
             </div>
@@ -724,6 +765,7 @@
                 SOMETHING
                 <span>MEMORABLE.</span>
             </h2>
+            <p>EVERY ROLE IS A STORY. EVERY STORY NEEDS A FACE. LET'S CONNECT.</p>
 
         </div>
 
@@ -774,6 +816,12 @@
         </div>
 
     </div>
+    <div class="contact-Ending">
+        <p>
+            THANK YOU FOR VISITING
+            <span> MY PORTFOLIO</span>
+        </p>
+    </div>
 
 </section>
 
@@ -805,6 +853,96 @@
 
 
 <script src="script.js"></script>
+<!-- ================= SHOWREEL POPUP ================= -->
+
+<div class="showreel-modal" id="showreelModal">
+
+    <div class="showreel-box">
+
+        <button class="close-showreel" onclick="closeShowreels()">
+            ×
+        </button>
+
+        <span class="modal-label">
+            SRIRAM KALAVALA
+        </span>
+
+        <h2>
+            SELECT
+            <span>SHOWREEL</span>
+        </h2>
+
+        <div class="showreel-options">
+
+            <a href="images/reels/showreel.mp4" target="_blank" class="reel-option">
+
+                <span class="reel-number">01</span>
+
+                <div>
+                    <h3>Emotion</h3>
+                </div>
+
+                <span class="reel-arrow">↗</span>
+
+            </a>
+
+
+            <a href="images/DancePer.mp4" target="_blank" class="reel-option">
+
+                <span class="reel-number">02</span>
+
+                <div>
+                    <h3>Dance</h3>
+                </div>
+
+                <span class="reel-arrow">↗</span>
+
+            </a>
+
+
+            <a href="images/mimicry.mp4" target="_blank" class="reel-option">
+
+                <span class="reel-number">03</span>
+
+                <div>
+                    <h3>Mimicry</h3>
+                    
+                </div>
+
+                <span class="reel-arrow">↗</span>
+
+            </a>
+
+
+            <a href="images/thedaAct.mp4" target="_blank" class="reel-option">
+
+                <span class="reel-number">04</span>
+
+                <div>
+                    <h3>Comedy</h3>
+                </div>
+
+                <span class="reel-arrow">↗</span>
+
+            </a>
+             <a href="images/DailougeAct.mp4" target="_blank" class="reel-option">
+
+                <span class="reel-number">05</span>
+
+                <div>
+                    <h3>Serious</h3>
+                </div>
+
+                <span class="reel-arrow">↗</span>
+
+            </a>
+            
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
