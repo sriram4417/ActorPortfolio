@@ -1,1413 +1,948 @@
-/* =========================================
-   RESET
-========================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Sriram Kalavala | Actor Portfolio</title>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta name="description"
+          content="Sriram Kalavala - Actor, Content Creator, Dance, Direction and Script Writing">
 
-body {
-    position: relative;
-    background:
-        linear-gradient(rgba(12, 12, 12, 0.46), rgba(12, 12, 12, 0.62)),
-        url("images/fullshot.jpeg") center center / cover no-repeat fixed;
-    color: #f5f2eb;
-    font-family: "DM Sans", sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
-}
+    <link rel="stylesheet" href="style.css">
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 236, 203, 0.08);
-    pointer-events: none;
-    z-index: 0;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+</head>
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+<body>
+    <!DOCTYPE html>
+<html lang="en">
 
+<head>
+    ...
+</head>
 
-/* =========================================
-   VARIABLES
-========================================= */
+<body>
 
-:root {
+    <!-- ================= CINEMATIC INTRO ================= -->
 
-    --black: #080809;
-    --dark: #101012;
-    --white: #f5f2eb;
-    --grey: #99999e;
-    --gold: #b99a5b;
-    --border: rgba(255,255,255,0.12);
+    <div id="intro">
 
-}
+        <div class="intro-line"></div>
 
+        <div class="intro-content">
 
-/* =========================================
-   PRELOADER
-========================================= */
+            <span class="intro-small">
+                ACTOR • PERFORMER • CREATOR
+            </span>
 
-#preloader {
+            <h1>
+                SRIRAM
+                <span>KALAVALA</span>
+            </h1>
+            <div class="name-gold-line"></div>
 
-    position: fixed;
+            <div class="intro-bottom">
+                <span>PORTFOLIO </span>
+                
+            </div>
 
-    inset: 0;
+        </div>
 
-    background: var(--black);
+    </div>
 
-    z-index: 9999;
+    <!-- ================= YOUR EXISTING WEBSITE ================= -->
 
-    display: flex;
+    <nav>
+        ...
+    </nav>
 
-    flex-direction: column;
 
-    justify-content: center;
+<!-- ================= PRELOADER ================= -->
 
-    align-items: center;
+<div id="preloader">
+    <div class="loader-name">SRIRAM</div>
+    <div class="loader-line"></div>
+</div>
 
-}
 
-.loader-name {
+<!-- ================= NAVBAR ================= -->
 
-    font-family: "Playfair Display", serif;
+<header class="navbar">
 
-    font-size: 35px;
+    <div class="logo">
+        <span>S</span>K
+    </div>
 
-    letter-spacing: 5px;
+    <nav id="navMenu">
 
-}
+        <a href="#home">Home</a>
+        <a href="#about">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#looks">Looks</a>
+        <a href="#skills">Skills</a>
+        <a href="#characters">Characters</a>
+        <a href="#showreel">Showreel</a>
+        <a href="#contact">Contact</a>
 
-.loader-line {
+    </nav>
 
-    width: 0;
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
 
-    height: 2px;
+</header>
 
-    background: var(--gold);
 
-    margin-top: 20px;
+<!-- ================= HERO ================= -->
 
-    animation: load 1.5s forwards;
+<section class="hero" id="home">
 
-}
+    <div class="hero-image">
+        <img src="images/cute.jpeg" alt="Sriram Kalavala Actor">
+    </div>
 
-@keyframes load {
+    <div class="hero-overlay"></div>
 
-    to {
-        width: 150px;
-    }
+    <div class="hero-content">
 
-}
+        <p class="small-title">
+            ACTOR • DANCER • CONTENT CREATOR
+        </p>
 
+        <h1>
+            SRIRAM
+            <span>KALAVALA</span>
+        </h1>
 
-/* =========================================
-   NAVBAR
-========================================= */
+        <div class="hero-line"></div>
 
-.navbar {
+        <p class="hero-description">
+            A fresh actor driven by storytelling,
+            emotion and visual expression.
+        </p>
 
-    position: fixed;
+        <div class="hero-buttons">
 
-    top: 0;
+            <button class="btn showreel-btn" onclick="openShowreels()">
+    WATCH SHOWREEL
+</button>
+            <a href="#contact" class="btn secondary">
+                CONTACT ME
+            </a>
 
-    left: 0;
+        </div>
 
-    width: 100%;
+    </div>
 
-    height: 80px;
+    <div class="scroll-text">
+        SCROLL TO EXPLORE ↓
+    </div>
 
-    padding: 0 5%;
+</section>
 
-    display: flex;
 
-    align-items: center;
+<!-- ================= PROFILE ================= -->
 
-    justify-content: space-between;
+<section class="profile section" id="about">
+     <div class="hero-image">
+        <img src="images/Background1.jpeg" alt="Sriram Kalavala Actor">
+    </div>
+<div class="hero-overlay"></div>
 
-    z-index: 1000;
+    <div class="hero-content">
 
-    transition: 0.4s;
+    <div class="section-label">
+        01 / CASTING PROFILE
+    </div>
 
-}
+    <div class="profile-grid">
 
-.navbar.scrolled {
+        <div class="profile-title">
 
-    background: rgba(8,8,9,0.92);
+            <p>THE PERSON</p>
 
-    backdrop-filter: blur(15px);
+            <h2>
+                A FRESH FACE
+                <span>BUILT FOR THE SCREEN.</span>
+            </h2>
 
-    border-bottom: 1px solid var(--border);
+        </div>
 
-}
+        <div class="profile-text">
 
+            <p>
+                I am an aspiring actor driven by storytelling,
+                emotion and visual expression.
+            </p>
 
-.logo {
+            <p>
+                My interest lies in bringing characters to life
+                through natural performance, expressions,
+                body language and screen presence.
+            </p>
 
-    font-family: "Playfair Display", serif;
+            <p>
+                Alongside acting, I explore dance, direction,
+                script writing and content creation.
+            </p>
 
-    font-size: 25px;
+        </div>
 
-    font-weight: 700;
+    </div>
 
-}
 
-.logo span {
+    <!-- BASIC DETAILS -->
 
-    color: var(--gold);
+    <div class="details-grid">
 
-}
+        <div class="detail">
+            <span>NAME</span>
+            <strong>Sriram Kalavala</strong>
+        </div>
 
+        <div class="detail">
+            <span>AGE</span>
+            <strong>23</strong>
+        </div>
 
-nav {
+        <div class="detail">
+            <span>HEIGHT</span>
+            <strong>5'6" / 167 CM</strong>
+        </div>
 
-    display: flex;
+        <div class="detail">
+            <span>WEIGHT</span>
+            <strong>54 KG</strong>
+        </div>
 
-    gap: 30px;
+        <div class="detail">
+            <span>LANGUAGES</span>
+            <strong>Telugu • English • Hindi</strong>
+        </div>
 
-}
+        <div class="detail">
+            <span>BASE</span>
+            <strong>Hyderabad</strong>
+        </div>
 
-nav a {
+    </div>
 
-    font-size: 11px;
+</section>
+<!-- ================= PERFORMANCE GALLERY ================= -->
 
-    text-transform: uppercase;
+<section class="performance-gallery section" id="experience">
 
-    letter-spacing: 1px;
+    <div class="section-label">
+        02 / ON-SCREEN MOMENTS
+    </div>
 
-    color: #bbb;
+    <div class="section-heading">
 
-    transition: 0.3s;
+        <h2>
+            FROM THE
+            <span>SHOWS.</span>
+        </h2>
 
-}
+        <p>
+            Selected moments from television performances.
+        </p>
 
-nav a:hover {
+    </div>
 
-    color: var(--gold);
 
-}
+    <div class="gallery-grid">
 
+        <!-- DHEE IMAGE 01 -->
 
-.menu-btn {
+        <div class="gallery-item large">
 
-    display: none;
+            <img
+                src="dhee/dhee per1.jpeg"
+                alt="Sriram Kalavala performing on Dhee"
+            >
 
-    background: none;
+            <div class="gallery-caption">
 
-    border: none;
+                <span>DHEE</span>
 
-    color: white;
+                <h3>
+                    Dance Performance
+                </h3>
 
-    font-size: 25px;
+            </div>
 
-}
+        </div>
 
 
-/* =========================================
-   HERO
-========================================= */
+        <!-- DHEE IMAGE 02 -->
 
-.hero {
+        <div class="gallery-item">
 
-    height: 100vh;
+            <img
+                src="dhee/pro.jpeg"
+                alt="Sriram Kalavala on Dhee"
+            >
 
-    min-height: 700px;
+            <div class="gallery-caption">
 
-    position: relative;
+                <span>DHEE</span>
 
-    display: flex;
+                <h3>
+                    On-stage view
+                </h3>
 
-    align-items: center;
+            </div>
 
-    overflow: hidden;
+        </div>
 
-}
 
-.hero-image {
+        <!-- DHEE IMAGE 03 -->
 
-    position: absolute;
+        <div class="gallery-item">
 
-    inset: 0;
+            <img
+                src="dhee/tram per.jpeg"
+                alt="Sriram Kalavala Dhee performance"
+            >
 
-}
+            <div class="gallery-caption">
 
-.hero-image img {
+                <span>DHEE</span>
 
-    filter: sepia(0.18) saturate(0.7) brightness(0.9) contrast(1.08);
-    object-position: center;
+                <h3>
+                    Team Performance
+                </h3>
 
-}
+            </div>
 
-.hero-overlay {
+        </div>
+          <!-- DHEE IMAGE 04 -->
 
-    position: absolute;
+        <div class="gallery-item">
 
-    inset: 0;
+            <img
+                src="dhee/fire.jpeg"
+                alt="Sriram Kalavala Dhee performance"
+            >
 
-    background:
+            <div class="gallery-caption">
 
-        linear-gradient(
-            90deg,
-            rgba(0,0,0,0.9),
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.15)
-        );
+                <span>DHEE</span>
 
-}
+                <h3>
+                    Fire Getup
+                </h3>
 
-.hero-content {
+            </div>
 
-    position: relative;
+        </div>
+         <!-- DHEE IMAGE 05 -->
 
-    z-index: 2;
+        <div class="gallery-item">
 
-    width: 90%;
+            <img
+                src="dhee/retro.jpeg"
+                alt="Sriram Kalavala Dhee performance"
+            >
 
-    max-width: 1200px;
+            <div class="gallery-caption">
 
-    margin: auto;
+                <span>DHEE</span>
 
-}
+                <h3>
+                    Retro Getup
+                </h3>
 
-.small-title {
+            </div>
 
-    color: var(--gold);
+        </div>
+        
 
-    letter-spacing: 4px;
 
-    font-size: 11px;
+        <!-- SRIDEVI DRAMA COMPANY 01 -->
 
-    margin-bottom: 25px;
+        <div class="gallery-item">
 
-}
+            <img
+                src="dhee/farmer.jpeg"
+                alt="Sriram Kalavala Sridevi Drama Company"
+            >
 
-.hero h1 {
+            <div class="gallery-caption">
 
-    font-family: "Playfair Display", serif;
+                <span>SRIDEVI DRAMA COMPANY</span>
 
-    font-size: clamp(55px, 9vw, 130px);
+                <h3>
+                    Farmer Performance
+                </h3>
 
-    line-height: 0.8;
+            </div>
 
-    font-weight: 500;
+        </div>
 
-}
 
-.hero h1 span {
+        <!-- SRIDEVI DRAMA COMPANY 02 -->
 
-    display: block;
+        <div class="gallery-item">
 
-    color: transparent;
+            <img
+                src="dhee/my act.jpeg"
+                alt="Sriram Kalavala television performance"
+            >
 
-    -webkit-text-stroke: 1px white;
+            <div class="gallery-caption">
 
-}
+                <span>SRIDEVI DRAMA COMPANY</span>
 
-.hero-line {
+                <h3>
+                    Television Performance
+                </h3>
 
-    width: 80px;
+            </div>
 
-    height: 2px;
+        </div>
 
-    background: var(--gold);
+    </div>
 
-    margin: 35px 0 20px;
+</section>
 
-}
+<!-- ================= PHOTO LOOKS ================= -->
 
-.hero-description {
+<section class="looks section" id="looks">
 
-    max-width: 420px;
+    <div class="section-label">
+        03 / VISUAL CASTING CARD
+    </div>
 
-    color: #c3c3c3;
+    <div class="section-heading">
 
-    line-height: 1.8;
+        <h2>
+            THE
+            <span>LOOKS</span>
+        </h2>
 
-    font-size: 14px;
+        <p>
+            Let the camera decides.
+        </p>
 
-}
+    </div>
 
-.hero-buttons {
 
-    display: flex;
+    <div class="photo-grid">
 
-    gap: 15px;
+        <div class="photo-card large">
+            <img src="images/attitude.jpeg">
+            <div class="photo-caption">
+                <span>01 ATTITUDE</span>
+            </div>
+        </div>
 
-    margin-top: 30px;
+        <div class="photo-card large">
+            <img src="images/decent.jpeg">
+            <div class="photo-caption">
+                <span>02 DECENT</span>
+            </div>
+        </div>
 
-}
+        <div class="photo-card large">
+            <img src="images/fullshot.jpeg" >
+            <div class="photo-caption">
+                <span>03 FULLSHOT</span>
 
-.btn {
+            </div>
+        </div>
 
-    padding: 15px 25px;
+        <div class="photo-card">
+            <img src="images/smiling face.jpeg">
+            <div class="photo-caption">
+                <span>04 SMILING FACE</span>
+            
+            </div>
+        </div>
 
-    border: 1px solid var(--gold);
+         <div class="photo-card">
+            <img src="images/coolRomantic.jpeg">
+            <div class="photo-caption">
+                <span>05 COOL+ROMANTIC</span>
+            
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="images/love.jpg">
+            <div class="photo-caption">
+                <span>06 LOVE </span>
+            </div>
+        </div> 
+        <div class="photo-card medium">
+            <img src="images/amayakam.jpeg">
+            <div class="photo-caption">
+                <span>07 AMAYAKAM</span>
+            </div>
+        </div>    
+    <div class="photo-portrait">
+        <div class="photo-card medium">
+            <img src="images/serious.jpg">
+            <div class="photo-caption">
+                <span>07 KOPAM</span>
+            </div>
+        </div>
+    
+        <div class="photo-card medium">
+            <img src="images/emotional.jpg">
+            <div class="photo-caption">
+                <span>08 EMOTION</span>
+            </div>
+        </div>
+        <div class="photo-card medium">
+            <img src="images/tingari.jpeg">
+            <div class="photo-caption">
+                <span>10 TINGARI</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 
-    font-size: 10px;
 
-    letter-spacing: 1.5px;
+<!-- ================= SKILLS ================= -->
 
-    transition: 0.3s;
+<section class="skills section" id="skills">
+<div class="hero-image">
+        <img src="images/background.jpeg" alt="Sriram Kalavala Actor">
+    </div>
 
-}
+    <div class="hero-overlay"></div>
 
-.btn.primary {
+    <div class="hero-content">
+        
+    <div class="section-label">
+        04 / PERFORMANCE
+    </div>
 
-    background: var(--gold);
+    <h2 class="big-heading">
+        WHAT I
+        <span>BRING.</span>
+    </h2>
 
-    color: #080809;
 
-}
+    <div class="skills-grid">
 
-.btn.primary:hover {
+        <div class="skill-card">
+            <div class="skill-number">01</div>
+            <h3>ACTING</h3>
+            <p>
+                Natural performance,
+                emotional scenes,
+                dialogue delivery
+                and screen presence.
+            </p>
+        </div>
 
-    background: white;
+        <div class="skill-card">
+            <div class="skill-number">02</div>
+            <h3>DANCE</h3>
+            <p>
+                Performance energy,
+                rhythm and expressive
+                movement.
+            </p>
+        </div>
 
-}
+        <div class="skill-card">
+            <div class="skill-number">03</div>
+            <h3>DIRECTION</h3>
+            <p>
+                Visual storytelling,
+                scene thinking and
+                character perspective.
+            </p>
+        </div>
 
-.btn.secondary:hover {
+        <div class="skill-card">
+            <div class="skill-number">04</div>
+            <h3>SCRIPT WRITING</h3>
+            <p>
+                Story ideas,
+                screenplay development
+                and dialogue writing.
+            </p>
+        </div>
 
-    background: var(--gold);
+        <div class="skill-card">
+            <div class="skill-number">05</div>
+            <h3>CONTENT CREATION</h3>
+            <p>
+                Short-form performance,
+                camera confidence and
+                digital storytelling.
+            </p>
+        </div>
 
-    color: black;
+    </div>
 
-}
+</section>
 
-.scroll-text {
 
-    position: absolute;
+<!-- ================= CHARACTER RANGE ================= -->
 
-    right: 5%;
+<section class="characters section" id="characters">
 
-    bottom: 40px;
+    <div class="section-label">
+        05 / CHARACTER RANGE
+    </div>
 
-    writing-mode: vertical-rl;
+    <div class="section-heading">
 
-    color: #aaa;
+        <h2>
+            DIFFERENT
+            <span>SIDES.</span>
+        </h2>
 
-    font-size: 9px;
+        <p>
+            Different stories. Different characters.
+        </p>
 
-    letter-spacing: 3px;
+    </div>
 
-}
 
+    <div class="character-grid">
 
-/* =========================================
-   SECTIONS
-========================================= */
+        <div class="character-card">
 
-.section {
+            <img src="images/lover.jpeg" alt="The Lover">
 
-    padding: 130px 8%;
-    position: relative;
-    z-index: 1;
-    background: rgba(8, 8, 9, 0.46);
-    backdrop-filter: blur(1px);
+            <div class="character-overlay">
 
-}
+                <span>01</span>
 
-.section-label {
+                <h3>
+                    THE
+                    <strong>LOVER</strong>
+                </h3>
 
-    color: var(--gold);
+                <p>
+                    Romantic • Soft • Emotional
+                </p>
 
-    font-size: 10px;
+            </div>
 
-    letter-spacing: 3px;
+        </div>
 
-    margin-bottom: 50px;
 
-}
+        <div class="character-card">
 
-.section-heading {
+            <img src="images/YOUTH.jpeg" alt="The Youth">
 
-    margin-bottom: 60px;
+            <div class="character-overlay">
 
-}
+                <span>02</span>
 
-.section-heading h2,
-.big-heading {
+                <h3>
+                    THE
+                    <strong>YOUTH</strong>
+                </h3>
 
-    font-family: "Playfair Display", serif;
+                <p>
+                    Energetic • Fun • Relatable
+                </p>
 
-    font-size: clamp(45px, 7vw, 85px);
+            </div>
 
-    line-height: 0.9;
+        </div>
 
-    font-weight: 500;
 
-}
+        <div class="character-card">
 
-.section-heading h2 span,
-.big-heading span {
+            <img src="images/intense.jpg" alt="The Intense">
 
-    display: block;
+            <div class="character-overlay">
 
-    color: var(--gold);
+                <span>03</span>
 
-}
+                <h3>
+                    THE
+                    <strong>INTENSE</strong>
+                </h3>
+                <p>
+                    Serious • Dramatic • Internal
+                </p>
 
-.section-heading p {
+            </div>
 
-    margin-top: 20px;
+        </div>
 
-    color: var(--grey);
 
-}
+        <div class="character-card">
 
+            <img src="images/mass.jpeg" alt="The Mass">
 
-/* =========================================
-   PROFILE
-========================================= */
+            <div class="character-overlay">
 
-.profile {
+                <span>04</span>
 
-    background: var(--white);
+                <h3>
+                    THE
+                    <strong>MASS</strong>
+                </h3>
 
-    color: var(--white);
+                <p>
+                    Attitude • Confidence • Energy
+                </p>
 
-}
+            </div>
 
-.profile-grid {
+        </div>
 
-    display: grid;
+    </div>
 
-    grid-template-columns: 1fr 1fr;
+</section>
 
-    gap: 100px;
 
-}
+<!-- ================= SHOWREEL ================= -->
 
-.profile-title p {
+<section class="showreel section" id="showreel">
+   
+    
 
-    font-size: 15px;
+    <div class="section-label">
+        06 / SHOWREEL
+    </div>
 
-    color: var(--gold);
+    <div class="showreel-content">
 
-    letter-spacing: 2px;
+        <div>
 
-}
+            <h2>
+                WATCH MY
+                <span>PERFORM.</span>
+            </h2>
 
-.profile-title h2 {
+            <p>
+                Acting • Expressions • Dialogue • Character
+            </p>
 
-    font-family: "Playfair Display", serif;
+        </div>
 
-    font-size: 55px;
 
-    line-height: 1;
+        <div class="qr-container">
 
-    margin-top: 20px;
+            <img src="images/qr scanner.png" alt="QR Code">
 
-}
+            <div class="qr-placeholde">
+                QR
+            </div>
 
-.profile-title h2 span {
+            <p>
+                SCAN TO WATCH
+            </p>
 
-    display: block;
+        </div>
 
-    color: var(--gold);
+    </div>
 
-}
+</section>
 
-.profile-text {
 
-    max-width: 550px;
+<!-- ================= CONTACT ================= -->
 
-}
+<section class="contact section" id="contact">
 
-.profile-text p {
+    <div class="contact-inner">
 
-    margin-bottom: 25px;
+        <div class="contact-title">
 
-    color: #f6f6f6;
+            <p>
+                LET'S CREATE
+            </p>
 
-    line-height: 1.9;
+            <h2>
+                SOMETHING
+                <span>MEMORABLE.</span>
+            </h2>
+            <p>EVERY ROLE IS A STORY. EVERY STORY NEEDS A FACE. LET'S CONNECT.</p>
 
-}
+        </div>
 
 
-.details-grid {
+        <div class="contact-info">
 
-    margin-top: 100px;
+            <div>
+                <span>NAME</span>
+                <strong>SRIRAM KALAVALA</strong>
+            </div>
 
-    display: grid;
+            <div>
+                <span>LOCATION</span>
+                <strong>HYDERABAD, INDIA</strong>
+            </div>
 
-    grid-template-columns: repeat(3,1fr);
+            <div>
+                <span>PHONE</span>
+                <strong>+91 8341757162</strong>
+            </div>
 
-    border-top: 1px solid #ccc;
+            <div>
+                <span>EMAIL</span>
+                <strong>sriramkalavala665@gmail.com</strong>
+            </div>
 
-}
+            <div>
+                <span>INSTAGRAM</span>
+                <strong>https://www.instagram.com/_sriram_2526</strong>
+            </div>
 
-.detail {
+        </div>
 
-    padding: 30px 20px;
+        <div class="contact-buttons">
 
-    border-bottom: 1px solid #ccc;
+            <a href="mailto:sriramkalavala665@gmail.com"
+            
+               class="btn primary">
+                EMAIL ME
+            </a>
 
-}
+            <a href="https://www.instagram.com/_sriram_2526"
+               target="_blank"
+               class="btn secondary">
+                INSTAGRAM
+            </a>
 
-.detail span {
+        </div>
 
-    display: block;
+    </div>
+    <div class="contact-Ending">
+        <p>
+            THANK YOU FOR VISITING
+            <span> MY PORTFOLIO</span>
+        </p>
+    </div>
 
-    font-size: 9px;
+</section>
 
-    color: var(--gold);
 
-    letter-spacing: 2px;
+<!-- ================= FOOTER ================= -->
 
-    margin-bottom: 10px;
+<footer>
 
-}
+    <div>
+        SRIRAM KALAVALA
+    </div>
 
-.detail strong {
+    <p>
+        ACTOR • DANCER • CONTENT CREATOR
+    </p>
 
-    font-size: 14px;
+    <span>
+        © 2026
+    </span>
 
-}
+</footer>
 
 
-/* =========================================
-   PHOTO GRID
-========================================= */
+<!-- ================= PDF BUTTON ================= -->
 
-.photo-grid {
+<button class="pdf-btn" onclick="printPortfolio()">
+    ↓ SAVE PDF
+</button>
 
-    display: grid;
 
-    grid-template-columns: 1.3fr 1fr 1fr;
+<script src="script.js"></script>
+<!-- ================= SHOWREEL POPUP ================= -->
 
-    grid-template-rows: 280px 280px;
+<div class="showreel-modal" id="showreelModal">
 
-    gap: 15px;
+    <div class="showreel-box">
 
-}
+        <button class="close-showreel" onclick="closeShowreels()">
+            ×
+        </button>
 
-.photo-card {
+        <span class="modal-label">
+            SRIRAM KALAVALA
+        </span>
 
-    position: relative;
+        <h2>
+            SELECT
+            <span>SHOWREEL</span>
+        </h2>
 
-    overflow: hidden;
+        <div class="showreel-options">
 
-}
+            <a href="images/reels/showreel.mp4" target="_blank" class="reel-option">
 
-.photo-card.large {
+                <span class="reel-number">01</span>
 
-    grid-row: span 2;
+                <div>
+                    <h3>Emotion</h3>
+                </div>
 
-}
+                <span class="reel-arrow">↗</span>
 
-.photo-card img {
+            </a>
 
-    transition: transform 0.8s ease;
 
-}
+            <a href="images/DancePer.mp4" target="_blank" class="reel-option">
 
-.photo-card:hover img {
+                <span class="reel-number">02</span>
 
-    transform: scale(1.07);
+                <div>
+                    <h3>Dance</h3>
+                </div>
 
-}
+                <span class="reel-arrow">↗</span>
 
-.photo-caption {
+            </a>
 
-    position: absolute;
 
-    bottom: 0;
+            <a href="images/mimicry.mp4" target="_blank" class="reel-option">
 
-    left: 0;
+                <span class="reel-number">03</span>
 
-    width: 100%;
+                <div>
+                    <h3>Mimicry</h3>
+                    
+                </div>
 
-    padding: 20px;
+                <span class="reel-arrow">↗</span>
 
-    background: linear-gradient(transparent,rgba(0,0,0,.8));
+            </a>
 
-    font-size: 11px;
 
-    letter-spacing: 2px;
+            <a href="images/thedaAct.mp4" target="_blank" class="reel-option">
 
-}
+                <span class="reel-number">04</span>
 
-.photo-caption span {
+                <div>
+                    <h3>Comedy</h3>
+                </div>
 
-    color: var(--gold);
+                <span class="reel-arrow">↗</span>
 
-    margin-right: 10px;
+            </a>
+             <a href="images/DailougeAct.mp4" target="_blank" class="reel-option">
 
-}/* =========================================
-   PERFORMANCE GALLERY
-========================================= */
+                <span class="reel-number">05</span>
 
-.performance-gallery {
+                <div>
+                    <h3>Serious</h3>
+                </div>
 
-    background: #09090b;
+                <span class="reel-arrow">↗</span>
 
-}
+            </a>
+            
 
-.gallery-grid {
+        </div>
 
-    display: grid;
+    </div>
 
-    grid-template-columns: repeat(2, 1fr);
+</div>
 
-    gap: 18px;
-
-}
-
-
-.gallery-item {
-
-    height: 420px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background: #151518;
-
-}
-
-
-.gallery-item.large {
-
-    height: 600px;
-
-    grid-row: span 2;
-
-}
-
-
-.gallery-item img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.8s ease;
-
-}
-
-
-.gallery-item:hover img {
-
-    transform: scale(1.06);
-
-}
-
-
-/* DARK GRADIENT */
-
-.gallery-item::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to top,
-            rgba(0,0,0,0.85),
-            transparent 55%
-        );
-
-}
-
-
-/* CAPTION */
-
-.gallery-caption {
-
-    position: absolute;
-
-    left: 25px;
-
-    bottom: 25px;
-
-    z-index: 2;
-
-}
-
-
-.gallery-caption span {
-
-    color: #b99a5b;
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-}
-
-
-.gallery-caption h3 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 25px;
-
-    font-weight: 500;
-
-    margin-top: 7px;
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:800px) {
-
-    .gallery-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .gallery-item,
-    .gallery-item.large {
-
-        height: 450px;
-
-        grid-row: auto;
-
-    }
-
-}
-@media(max-width:800px) {
-
-    .experience-item {
-
-        grid-template-columns: 45px 1fr;
-
-        gap: 15px;
-
-        padding: 35px 0;
-
-    }
-
-    .experience-content h3 {
-
-        font-size: 32px;
-
-    }
-
-}
-
-/* =========================================
-   SKILLS
-========================================= */
-
-.skills {
-
-    background: #111114;
-
-}
-
-.big-heading {
-
-    margin-bottom: 70px;
-
-}
-
-.skills-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 1px;
-
-    background: var(--border);
-
-}
-
-.skill-card {
-
-    background: #111114;
-
-    padding: 45px 35px;
-
-    min-height: 260px;
-
-    transition: 0.4s;
-
-}
-
-.skill-card:hover {
-
-    background: #1b1b1e;
-
-    transform: translateY(-5px);
-
-}
-
-.skill-number {
-
-    color: var(--gold);
-
-    font-size: 11px;
-
-    margin-bottom: 50px;
-
-}
-
-.skill-card h3 {
-
-    font-size: 17px;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 15px;
-
-}
-
-.skill-card p {
-
-    color: var(--grey);
-
-    line-height: 1.7;
-
-    font-size: 13px;
-
-}
-
-
-/* =========================================
-   CHARACTERS
-========================================= */
-
-.character-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 20px;
-
-}
-
-.character-card {
-
-    height: 550px;
-
-    position: relative;
-
-    overflow: hidden;
-
-}
-
-.character-card img {
-
-    transition: 0.8s;
-
-}
-
-.character-card:hover img {
-
-    transform: scale(1.06);
-
-}
-
-.character-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    padding: 35px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: flex-end;
-
-    background: linear-gradient(
-        transparent,
-        rgba(0,0,0,.9)
-    );
-
-}
-
-.character-overlay span {
-
-    color: var(--gold);
-
-    font-size: 11px;
-
-}
-
-.character-overlay h3 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 45px;
-
-    font-weight: 400;
-
-}
-
-.character-overlay h3 strong {
-
-    display: block;
-
-}
-
-.character-overlay p {
-
-    color: #ccc;
-
-    font-size: 11px;
-
-    margin-top: 8px;
-
-}
-
-
-/* =========================================
-   SHOWREEL
-========================================= */
-
-.showreel {
-
-    background: var(--gold);
-
-    color: var(--black);
-
-}
-
-.showreel .section-label {
-
-    color: #5b4929;
-
-}
-
-.showreel-content {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-}
-
-.showreel h2 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(50px,8vw,100px);
-
-    line-height: .85;
-
-}
-
-.showreel h2 span {
-
-    display: block;
-
-    color: white;
-
-}
-
-.showreel p {
-
-    margin-top: 25px;
-
-    color: #50462f;
-
-}
-
-.qr-container {
-
-    text-align: center;
-
-}
-.qr-container img {
-    width: 100px;
-
-    height: 100px;
-
-    object-fit: contain;
-
-}
-
-.qr-placeholder {
-
-    width: 60px;
-
-    height: 60px;
-
-    background: white;
-
-    color: black;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-}
-
-.qr-container p {
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-}
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact {
-
-    background: #050506;
-
-}
-
-.contact-inner {
-
-    max-width: 1100px;
-
-    margin: auto;
-
-}
-
-.contact-title p {
-
-    color: var(--gold);
-
-    letter-spacing: 3px;
-
-    font-size: 10px;
-
-}
-
-.contact-title h2 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(50px,8vw,100px);
-
-    line-height: .9;
-
-    margin: 20px 0 80px;
-
-}
-
-.contact-title h2 span {
-
-    color: var(--gold);
-
-    display: block;
-
-}
-
-.contact-info {
-
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 35px;
-
-    border-top: 1px solid var(--border);
-
-    padding-top: 40px;
-
-}
-
-.contact-info span {
-
-    display: block;
-
-    color: var(--gold);
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 10px;
-
-}
-
-.contact-info strong {
-
-    font-size: 14px;
-
-    font-weight: 400;
-
-}
-
-.contact-buttons {
-
-    display: flex;
-
-    gap: 15px;
-
-    margin-top: 50px;
-
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-
-    padding: 35px 8%;
-
-    border-top: 1px solid var(--border);
-
-    display: flex;
-
-    justify-content: space-between;
-
-    color: #777;
-
-    font-size: 9px;
-
-    letter-spacing: 1px;
-
-}
-
-
-/* =========================================
-   PDF BUTTON
-========================================= */
-
-.pdf-btn {
-
-    position: fixed;
-
-    right: 25px;
-
-    bottom: 25px;
-
-    background: var(--gold);
-
-    color: black;
-
-    border: none;
-
-    padding: 14px 20px;
-
-    cursor: pointer;
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-
-    z-index: 999;
-
-}
-
-
-/* =========================================
-   ANIMATION
-========================================= */
-
-.reveal {
-
-    opacity: 0;
-
-    transform: translateY(40px);
-
-    transition: 1s;
-
-}
-
-.reveal.active {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media(max-width:800px) {
-
-    nav {
-
-        position: absolute;
-
-        top: 80px;
-
-        left: 0;
-
-        width: 100%;
-
-        background: #080809;
-
-        flex-direction: column;
-
-        padding: 30px;
-
-        display: none;
-
-    }
-
-    nav.active {
-
-        display: flex;
-
-    }
-
-    .menu-btn {
-
-        display: block;
-
-    }
-
-    .hero {
-
-        min-height: 650px;
-
-    }
-
-    .hero h1 {
-
-        font-size: 65px;
-
-    }
-
-    .profile-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-    }
-
-    .details-grid {
-
-        grid-template-columns: repeat(2,1fr);
-
-    }
-
-    .photo-grid {
-
-        grid-template-columns: 1fr 1fr;
-
-        grid-template-rows: 300px 300px 300px;
-
-    }
-
-    .photo-card.large {
-
-        grid-row: span 1;
-
-    }
-
-    .skills-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .character-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    .character-card {
-
-        height: 500px;
-
-    }
-
-    .showreel-content {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 50px;
-
-    }
-
-    .contact-info {
-
-        grid-template-columns: 1fr;
-
-    }
-
-    footer {
-
-        flex-direction: column;
-
-        gap: 15px;
-
-    }
-
-}
-
-
-/* =========================================
-   PRINT / PDF
-========================================= */
-
-@media print {
-
-    body {
-
-        background: white;
-
-        color: black;
-
-    }
-
-    .navbar,
-    .pdf-btn,
-    .scroll-text {
-
-        display: none !important;
-
-    }
-
-    .section {
-
-        page-break-inside: avoid;
-
-    }
-
-    .hero {
-
-        height: 100vh;
-
-    }
-
-}
+</body>
+</html>
